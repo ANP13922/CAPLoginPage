@@ -1,0 +1,9 @@
+{
+    "sqltools.connections": [
+        {
+            "dialect": "SQLite",
+            "database": "/home/user/projects/loginpage/loginpage.db",
+            "name": "My Loginpage SQLite"
+        }
+    ]
+}
