@@ -1,0 +1,45 @@
+specVersion: "2.5"
+metadata:
+  name: loginui
+type: application
+
+# server:
+#   customMiddleware:
+
+#   - name: fiori-tools-proxy
+
+#     afterMiddleware: compression
+
+#     configuration:
+
+#       ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
+
+#       backend:
+
+#       - path: /odata
+
+#         url: https://port8080-workspaces-ws-q7l59.us10.trial.applicationstudio.cloud.sap
+
+#       ui5:
+
+#         ui5Theme: sap_fiori_3
+
+#         path:
+
+#         - /resources
+
+#         - /test-resources
+
+#         url: https://ui5.sap.com
+
+#         version:  # The UI5 version, for instance, 1.78.1. Empty means latest version
+
+#   - name: fiori-tools-appreload
+
+#     afterMiddleware: compression
+
+#     configuration:
+
+#      port: 35729
+
+#      path: webapp

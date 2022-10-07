@@ -1,0 +1,6 @@
+### Create Product
+
+POST http://localhost:8080/odata/v4/UserService/Users
+Content-Type: application/json
+
+{"userId":"shriti9","password":"qwert"}
