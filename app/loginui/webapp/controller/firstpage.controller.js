@@ -40,6 +40,7 @@ sap.ui.define([
                             console.log(data.password);
                             if( data.password== n2){
                             MessageBox.success("Login Successful!!")
+                            
                             }
                             else{
                             MessageBox.error("Invalid Credentials!!")
@@ -51,6 +52,14 @@ sap.ui.define([
 
                     });
                 }
+              },
+              changefunc: function(){
+                var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			    oRouter.navTo("Routechanpass");
+              },
+              NewUserFunc: function(){
+                var oRouter = sap.ui.core.UIComponent.getRouterFor(this);
+			    oRouter.navTo("Routenewuser");
               }
         });
     });

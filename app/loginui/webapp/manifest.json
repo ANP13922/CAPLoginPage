@@ -104,6 +104,20 @@
           "target": [
             "Targetfirstpage"
           ]
+        },
+        {
+            "name": "Routechanpass",
+            "pattern": "changePassword",
+            "target": [
+              "Targetchanpass"
+            ] 
+        },
+        {
+            "name": "Routenewuser",
+            "pattern": "NewUser",
+            "target": [
+              "Targetnewuser"
+            ] 
         }
       ],
       "targets": {
@@ -113,6 +127,14 @@
           "clearControlAggregation": false,
           "viewId": "firstpage",
           "viewName": "firstpage"
+        },
+        "Targetchanpass":{
+            "viewType": "XML",
+          "viewName": "chanpass"
+        },
+        "Targetnewuser":{
+            "viewType": "XML",
+          "viewName": "newuser"
         }
       }
     },

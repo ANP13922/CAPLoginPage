@@ -1,0 +1,40 @@
+<mvc:View controllerName="loginui.controller.chanpass"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:layout="sap.ui.layout"
+    xmlns:tnt="sap.tnt">
+    
+        <Page id="page2" class="myBackgroundStyle1">
+        <content>
+        <Panel id="Panel1" 
+							
+							class="sapUiResponsiveMargin"
+							width="auto"
+                            backgroundDesign="Transparent">
+							<VBox id="VBox1" fitContainer="true" 
+								justifyContent="Center"
+							 alignItems="Center" 
+							 alignContent="Center">
+            <form:SimpleForm id="_IDGenSimpleForm2" editable="true" layout="ResponsiveGridLayout" 
+                    adjustLabelSpan="false" labelSpanL="4" labelSpanM="4" labelSpanS="12" 
+                    columnsL="1" columnsM="1" emptySpanL="4" emptySpanM="4">
+                        <form:content>
+                        <Title text="Change your Password here!" ></Title>
+                            
+                        <Label text="Mobile Number"  required="true"></Label>
+                        <Input id="inp_phno1"  placeholder="Enter your Mobile Number"></Input>
+                        <Label text="Enter your New password"  required="true"></Label>
+                        <Input id="inp_password1" type="Password" placeholder="Enter your New Password"></Input>
+                        </form:content>
+                    </form:SimpleForm>
+
+                    <Button id="UserSave" text="Save" type="Emphasized" press="onUpdateSave" ariaLabelledBy="Go to User Password Update Page"/>
+              
+                    </VBox>
+                    </Panel>
+                    </content>
+        </Page>
+    
+
+    </mvc:View>

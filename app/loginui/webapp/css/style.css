@@ -1,6 +1,13 @@
 /* Enter your custom styles here */
 .myBackgroundStyle {
-    height: 500px; 
+    height: 600px; 
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+   background-image: url('test2.jpg');
+ }
+ .myBackgroundStyle1 {
+    height: 600px; 
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;

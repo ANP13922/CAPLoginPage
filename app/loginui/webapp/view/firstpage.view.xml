@@ -5,10 +5,14 @@
     xmlns:layout="sap.ui.layout"
     xmlns:tnt="sap.tnt">
     <Shell id="shell">
-    <App id="fp1">
+    <App id="app">
     <pages>
-        <Page id="page" title="{i18n>title}" class="myBackgroundStyle">
+        <Page id="page" class="myBackgroundStyle">
+        <ObjectHeader
+        title="{i18n>title}">
+         </ObjectHeader>
             <content>
+
                 <Panel id="Panel1" 
 							
 							class="sapUiResponsiveMargin"
@@ -30,7 +34,10 @@
                         <Input id="inp_passwordId" value="{UserPassword}" type="Password" placeholder="Enter your Password"></Input>
                         </form:content>
                     </form:SimpleForm>
+                    <Link id="forgotpass" text="Forgot Password?" Emphasized="true" press="changefunc" />
                      <Button id="UserMP" text="Login" type="Emphasized" press="onLoginPress" ariaLabelledBy="Go to User Main Page"/>
+               <Button type="Emphasized" text="Create New Account" press="NewUserFunc" ariaLabelledBy="Create New User"/>
+       
                 </VBox>
                 </Panel>
             </content>
