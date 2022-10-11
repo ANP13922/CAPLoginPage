@@ -13,3 +13,6 @@
     background-size: cover;
    background-image: url('test2.jpg');
  }
+ #inp_otp,#lab_otp{
+        display: none;
+ }

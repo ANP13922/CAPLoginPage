@@ -9,3 +9,5 @@ entity Users : managed {
         Lname: String(20);
         phno: String(15);
 }
+
+
