@@ -2,52 +2,69 @@ specVersion: "2.5"
 metadata:
   name: loginui
 type: application
+framework:
 
-# server:
-#   customMiddleware:
+  name: SAPUI5
 
-#     - name: fiori-tools-proxy
+  version: 1.100.2
 
-#       afterMiddleware: compression
+  libraries:
 
-#       configuration:
+    - name: sap.m
 
-#         ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
+    - name: sap.f
 
-#         ui5:
+    - name: sap.suite.ui.generic.template
 
-#           path:
+    - name: sap.ui.comp
 
-#             - /resources
+    - name: sap.ui.core
 
-#             - /test-resources
+    - name: sap.ui.generic.app
 
-#           url: https://ui5.sap.com
+    - name: sap.ui.table
 
-#         backend:
+    - name: sap.ushell
 
-#           - path: /sap
+    - name: themelib_sap_fiori_3
+server:
 
-#             url: https://port8080-workspaces-ws-q7l59.us10.trial.applicationstudio.cloud.sap
+  customMiddleware:
 
-#     - name: fiori-tools-appreload
+    - name: fiori-tools-appreload
 
-#       afterMiddleware: compression
+      afterMiddleware: compression
 
-#       configuration:
+      configuration:
 
-#         port: 35729
+        port: 35729
 
-#         path: webapp
+        path: webapp
 
-#         delay: 300
+        delay: 300
 
-#     - name: fiori-tools-preview
+    - name: fiori-tools-proxy
 
-#       afterMiddleware: fiori-tools-appreload
+      afterMiddleware: compression
 
-#       configuration:
+      configuration:
 
-#         component: project1
+        ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
 
-#         ui5Theme: sap_fiori_3
+        backend:
+
+          - path: /odata
+
+            url: http://localhost:8080
+
+
+
+    - name: fiori-tools-preview
+
+      afterMiddleware: fiori-tools-appreload
+
+      configuration:
+
+        component: sap.cap.employee.achievementsdashboard
+
+        ui5Theme: sap_fiori_3n

@@ -20,16 +20,26 @@
                     adjustLabelSpan="false" labelSpanL="4" labelSpanM="4" labelSpanS="12" 
                     columnsL="1" columnsM="1" emptySpanL="4" emptySpanM="4">
                         <form:content>
+
                         <Title text="Change your Password here!" ></Title>
                             
                         <Label text="Mobile Number"  required="true"></Label>
                         <HBox id="HBox1" fitContainer="true" alignContent="Center" alignItems="Center">
                         <Input id="inp_phno1"  placeholder="e.g. 1234567890"></Input>
-                        <Button id="inp_verify" text="Verify" type="Emphasized" press="Verifyphno"/>
+                        <Link text="Send Otp" press="sendotp"/>
+                
                         </HBox>
+
+
                         <Label id="lab_otp" text="Enter OTP"  required="true"></Label>
+
+                        <HBox id="HBox2" fitContainer="true" alignContent="Center" alignItems="Center">
                         <Input id="inp_otp"  placeholder="e.g. 1234"></Input>
+                        <Button text="Verify Otp" type="Emphasized" press="checkOtp" />
+                        </HBox>
+
                         <Label text="Enter your New password"  required="true"></Label>
+
                         <Input id="inp_password1" type="Password" placeholder="Enter your New Password"></Input>
                         </form:content>
                     </form:SimpleForm>

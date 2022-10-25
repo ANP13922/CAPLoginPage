@@ -38,13 +38,13 @@ sap.ui.define([
                 });
 
             },
-            Verifyphno: function(){
+            sendotp: function(){
                 var phno1 = this.getView().byId('inp_phno1').getValue();
                 $.ajax({
                     type: "POST",
                     contentType: "application/json",
                     dataType: "json",
-                    url: "https://port4004-workspaces-ws-q7l59.us10.trial.applicationstudio.cloud.sap/user/mobileCheck",
+                    url: "https://port4004-workspaces-ws-q7l59.us10.trial.applicationstudio.cloud.sap/user/mobileOtp",
                     data: JSON.stringify({
                         phno: phno1
                     }),
