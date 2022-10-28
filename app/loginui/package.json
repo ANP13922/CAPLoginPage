@@ -1,0 +1,49 @@
+{
+
+    "name": "loginui",
+
+    "version": "0.0.1",
+
+    "private": true,
+
+    "description": "A Fiori application.",
+
+    "keywords": [
+
+      "ui5",
+
+      "openui5",
+
+      "sapui5"
+
+    ],
+
+    "main": "webapp/index.html",
+
+    "dependencies": {
+
+      "@sap/ux-ui5-fe-mockserver-middleware": "^1.6.0",
+
+      "@sap/ux-ui5-tooling": "^1.6.0",
+
+      "grunt": "^1.0.4"
+
+    },
+
+    "devDependencies": {
+
+      "@sap/grunt-sapui5-bestpractice-build": "1.3.65"
+
+    },
+
+    "scripts": {
+        "deploy-config": "npx -p @sap/ux-ui5-tooling fiori add deploy-config cf"
+    },
+
+    "engines": {
+
+      "node": "^12.0.0"
+
+    }
+
+  }

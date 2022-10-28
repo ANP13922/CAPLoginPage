@@ -1,0 +1,48 @@
+<mvc:View controllerName="loginui.controller.newuser"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:layout="sap.ui.layout"
+    xmlns:tnt="sap.tnt">
+    
+        <Page id="page4" class="myBackgroundStyle1">
+        <content>
+        <Panel id="Panel2" 
+							
+							class="sapUiResponsiveMargin"
+							width="auto"
+                            backgroundDesign="Transparent">
+							<VBox id="VBox2" fitContainer="true" 
+								justifyContent="Center"
+							 alignItems="Center" 
+							 alignContent="Center">
+
+            <form:SimpleForm id="_IDGenSimpleForm256" editable="true" layout="ResponsiveGridLayout" 
+                    adjustLabelSpan="false" labelSpanL="4" labelSpanM="4" labelSpanS="12" 
+                    columnsL="1" columnsM="1" emptySpanL="4" emptySpanM="4">
+                        <form:content>
+                        <Title text="Create your Account Here!" ></Title>
+                            
+                        <Label text="First Name"  required="true"></Label>
+                        <Input id="inp_fname"  placeholder="Enter your First Name"></Input>
+                        <Label text="Last Name"  required="true"></Label>
+                        <Input id="inp_lname"  placeholder="Enter your Last Name"></Input>
+                        <Label text="User Id"  required="true"></Label>
+                        <Input id="inp_userid"  placeholder="Enter your User Id "></Input>
+                        <Label text="Enter your Password"  required="true"></Label>
+                        <Input id="inp_password" type="Password" placeholder="Enter your Password"></Input>
+                        <Label text="Enter your Mobile Number"  required="true"></Label>
+                        <Input id="inp_phno" placeholder="Enter your Mobile Number"></Input>
+                        
+                        </form:content>
+                    </form:SimpleForm>
+
+                    <Button id="UserCreate" text="Create" type="Emphasized" press="onCreate" ariaLabelledBy="Creating New User"/>
+              
+                    </VBox>
+                    </Panel>
+                    </content>
+        </Page>
+    
+
+    </mvc:View>

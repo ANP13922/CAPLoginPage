@@ -1,0 +1,68 @@
+<mvc:View controllerName="loginui.controller.firstpage"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:form="sap.ui.layout.form"
+    xmlns:layout="sap.ui.layout"
+    xmlns:tnt="sap.tnt">
+    <Shell id="shell">
+    <App id="app">
+    <pages>
+        <Page id="page" class="myBackgroundStyle">
+        <ObjectHeader
+        title="{i18n>title}">
+         </ObjectHeader>
+            <content>
+
+                <Panel id="Panel1" 
+							
+							class="sapUiResponsiveMargin"
+							width="auto"
+                            backgroundDesign="Transparent">
+							<VBox id="VBox1" fitContainer="true" 
+								justifyContent="Center"
+							 alignItems="Center" 
+							 alignContent="Center">
+                    <form:SimpleForm id="_IDGenSimpleForm1" editable="true" layout="ResponsiveGridLayout" 
+                    adjustLabelSpan="false" labelSpanL="4" labelSpanM="4" labelSpanS="12" 
+                    columnsL="1" columnsM="1" emptySpanL="4" emptySpanM="4">
+                        <form:content>
+                        <Title id="_IDGenLabel3" text="Welcome User!" TitleAlignment="Center" ></Title>
+                            
+                        <Label id="_IDGenLabel4" text="Username"  required="true"></Label>
+                        <Input id="inp_usernameId" value="{UserId}" placeholder="Enter your Username"></Input>
+                        <Label id="_IDGenLabel5" text="Password"  required="true"></Label>
+                        <Input id="inp_passwordId" value="{UserPassword}" type="Password" placeholder="Enter your Password"></Input>
+                        </form:content>
+                    </form:SimpleForm>
+                    <Link id="forgotpass" text="Forgot Password?" Emphasized="true" press="changefunc" />
+                     <Button id="UserMP" text="Login" type="Emphasized" press="onLoginPress" ariaLabelledBy="Go to User Main Page"/>
+               <Button type="Emphasized" text="Create New Account" press="NewUserFunc" ariaLabelledBy="Create New User"/>
+       
+                </VBox>
+                </Panel>
+            </content>
+
+            <!-- <footer >
+                    <Bar id="_IDGenBar1" translucent="true">
+                        <contentLeft>
+                            <Text id="_IDGenText1" text="SAP" class="sapUiSmallMargin"></Text>
+                            <Link id="_IDGenLink1" text="Contact Us" class="sapUiSmallMargin" />
+                            <Link id="_IDGenLink2" text="About the Company" class="sapUiSmallMargin" />
+                            <Link id="_IDGenLink3" text="Quick Links" class="sapUiSmallMargin" />
+                        </contentLeft>
+                        <contentRight>
+                            <Link id="_IDGenLink5" text="Testimonials" class="sapUiSmallMargin"/>
+                            <Link id="_IDGenLink6" text="Facebook" class="sapUiSmallMargin"/>
+                            <Link id="_IDGenLink7" text="Twitter" class="sapUiSmallMargin"/>
+                            <Link id="_IDGenLink8" text="Instagram" class="sapUiSmallMargin"/>
+                        </contentRight>
+                        
+                    </Bar>
+            </footer> -->
+
+        </Page>
+    </pages>
+    </App>
+    </Shell>
+    
+</mvc:View>
